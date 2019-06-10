@@ -19,12 +19,12 @@ Pod::Spec.new do |s|
     'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser6.png'
   ]
 
-  s.homepage = 'https://github.com/mwaterfall/MWPhotoBrowser'
+  s.homepage = 'https://github.com/yaonuo/MWPhotoBrowser'
   s.author = { 'Michael Waterfall' => 'michaelwaterfall@gmail.com' }
   s.social_media_url = 'https://twitter.com/mwaterfall'
 
   s.source = {
-    :git => 'https://github.com/mwaterfall/MWPhotoBrowser.git',
+    :git => 'https://github.com/yaonuo/MWPhotoBrowser.git',
     :tag => '2.1.2'
   }
   s.platform = :ios, '7.0'
@@ -37,12 +37,20 @@ Pod::Spec.new do |s|
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
 
-  s.dependency 'MBProgressHUD', '~> 0.9'
-  s.dependency 'DACircularProgress', '~> 2.3'
+  # 更新库参考教程：https://www.jianshu.com/p/7e56ec72aeff
+
+  # 2019-06-10 MBProgressHUD 最新为 1.1.0
+  s.dependency 'MBProgressHUD', '~> 1.1.0'
+
+  # 2019-06-10 DACircularProgress 最新为 2.3.1
+  s.dependency 'DACircularProgress', '~> 2.3.1'
 
   # SDWebImage
   # 3.7.2 contains bugs downloading local files
   # https://github.com/rs/SDWebImage/issues/1109
-  s.dependency 'SDWebImage', '~> 3.7', '!= 3.7.2'
+  # s.dependency 'SDWebImage', '~> 3.7', '!= 3.7.2'
+
+  # 2019-06-10 SDWebImage 最新为 5.0.0
+  s.dependency 'SDWebImage', '~> 5.0.0'
 
 end
