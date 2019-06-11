@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   # https://github.com/rs/SDWebImage/issues/1109
   # s.dependency 'SDWebImage', '~> 3.7', '!= 3.7.2'
 
-  # 2019-06-10 SDWebImage 升级指定片3.8.2，因环信需要
-  s.dependency 'SDWebImage', '~> 3.8.2'
+  # 2019-06-10 SDWebImage 最新为 5.0.0
+  s.dependency 'SDWebImage', '~> 5.0.0'
 
 end
